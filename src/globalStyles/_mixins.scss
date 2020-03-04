@@ -1,0 +1,21 @@
+@mixin newsTextStyling {
+  h3 {
+    font-size: 1.1em;
+    margin-bottom: 3%;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+  p {
+    font-size: .8em;
+    line-height: 1.6em;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    font-size: .8em;
+    border-bottom: 1px solid $black;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

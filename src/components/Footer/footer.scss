@@ -1,0 +1,68 @@
+@import '../../globalStyles/variables';
+@import '../../globalStyles/mixins';
+footer {
+  width: 100%;
+  background-color: rgb(196, 196, 196);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: .8em;
+  padding: 3%;
+  margin-top: 10%;
+  .footerTxt {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    p {
+      color: $footerText;
+      padding: 3% 0;
+    }
+  }
+  .footerLinks {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    a {
+      display: block;
+      padding: 3% 0;
+      text-decoration: none;
+      color: $footerText;
+      &:last-child {
+        color: $red;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  ul {
+    padding-left: 15%;
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+    li {
+      margin-top: 22%;
+      color: $footerText;
+      list-style-type: circle;
+    }
+  }
+}
+
+@media only screen and(min-width:1020px) {
+  footer {
+    padding: 3% 30% 3% 15%;
+    .footerTxt {
+      p {
+        font-size: $footerFontSize;
+      }
+    }
+    .footerLinks {
+      a {
+        font-size: $footerFontSize;
+      }
+    }
+    ul {
+      li {
+        font-size: $footerFontSize;
+        margin: 17% 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.DanskeKonference {
+  padding: 5% 0;
+  width: 75%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    margin-top: 4%;
+    line-height: 1.3em;
+    opacity: 0.6;
+    font-size: 1em;
+  }
+}
+
+@media only screen and(min-width:1020px) {
+  .DanskeKonference {
+    padding: 0 0 5%;
+    width: 30%;
+    margin: 0 15%;
+    p {
+      font-size: 1.2em;
+    }
+  }
+}

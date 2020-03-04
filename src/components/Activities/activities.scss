@@ -1,0 +1,42 @@
+@import '../../globalStyles/variables';
+@import '../../globalStyles/mixins';
+.activitiesContainer {
+  padding: 5% 0;
+  width: 75%;
+  margin: 0 auto;
+  @include newsTextStyling;
+  div {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5%;
+      display: inline;
+      &:first-child {
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width:1020px) {
+  .activitiesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    .activitiesTxt {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+    div {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      .activitiesTxt {
+        h3 {
+          font-size: 1.3em
+        }
+        
+      }
+    }
+  }
+}
